@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-CSS-SElector</title>
+    <style>
+        h1{
+            color: blue;
+        }
+        #main-heading{
+            color: rgb(33, 245, 13);
+        }
+        .heading-selector{
+            color: rgb(204, 5, 114);
+        }
+        input[type="text"]{
+            background-color: rgb(233, 174, 174);
+        }
+        button{
+            background-color: black;
+            color: white;
+        }
+        /* Pseudo Classes */
+        button:hover{
+            background-color: red;
+            cursor: pointer;
+        }
+        button:active{
+            color: blue;
+            background-color: aqua;
+        }
+        li:first-child{
+            color: blueviolet;
+        }
+        li:nth-child(3){
+            color: red;
+        }
+        li:last-child{
+            color: rgb(54, 9, 219);
+        }
+        /* Pseudo Element */
+        p::before{
+            content: "Read this....";
+            color: blue;
+        }
+        p::after{
+            content: "The End...";
+            color: blue;
+        }
+        p::first-letter{
+            font-size: 30px;
+            color: blue;
+        }
+        p::first-line{
+            font-weight: bold;
+        }
+        div h4{
+            color: blue;
+        }
+        div div h4{
+            color: red;
+        }
+        div h5{
+            font-weight: bold;
+            font-style: italic;
+            color: brown;
+        }
+        h2 + p{
+            background-color: yellow;
+        }
+        h3 ~ p{
+            background-color: rgb(79, 248, 79);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Selector</h1>
+
+    <h2>=====Element Selector====</h2>
+    <h1 style="color: rgb(224, 12, 12);">Element Selector</h1>
+
+    <h2>=====ID Selector====</h2>
+    <h1 id="main-heading">ID Selector</h1>
+
+    <h2>=====Class Selector====</h2>
+    <h1 class="heading-selector">Class Selector</h1>
+    <h2 class="heading-selector">Class Selector</h2>
+    <h3 class="heading-selector">Class Selector</h3>
+
+    <h2>=====Attribute Selector====</h2>
+    <!-- <br /> -->
+    <input type="text" placeholder="Enter Your Full Name">
+   <!-- <br /> -->
+   <br /> <br>
+   <input type="number" placeholder="Enter Your Age">
+    <br />
+
+    <h2>=====Pseudo Classes Selector====</h2>
+    <button>Click Here...</button>
+
+
+
+    <h2>=====Pseudo Element Selector====</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br>
+       Nulla molestias excepturi fugiat sunt error illo consequuntur corrupti libero voluptates quasi, 
+       voluptatum incidunt eveniet veritatis suscipit aliquid nihil voluptas quibusdam sapiente! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+       Libero voluptatum cupiditate ipsam consequatur beatae quasi debitis iste molestiae ipsum culpa,
+       earum saepe necessitatibus eveniet voluptas maiores est dolorem vel! Aliquid?</p>
+
+    <h2>=====Descendant selector====</h2>
+    <div>
+        
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br>
+                Nulla molestias excepturi fugiat sunt error illo consequuntur corrupti libero voluptates quasi, 
+                voluptatum incidunt eveniet veritatis suscipit aliquid nihil voluptas quibusdam sapiente! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Libero voluptatum cupiditate ipsam consequatur beatae quasi debitis iste molestiae ipsum culpa,
+                earum saepe necessitatibus eveniet voluptas maiores est dolorem vel! Aliquid?</h4>
+       <div>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br>
+        Nulla molestias excepturi fugiat sunt error illo consequuntur corrupti libero voluptates quasi, 
+        voluptatum incidunt eveniet veritatis suscipit aliquid nihil voluptas quibusdam sapiente! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Libero voluptatum cupiditate ipsam consequatur beatae quasi debitis iste molestiae ipsum culpa,
+        earum saepe necessitatibus eveniet voluptas maiores est dolorem vel! Aliquid?</h4> 
+    </div>
+</div>
+        <h2>=====Child selector====</h2>
+    <div>
+        <h5>Java</h5>
+        <h5>Python</h5>
+        <h5>JavaScript</h5>
+        <h5>TypeScript</h5>
+    </div>
+
+    <h2>=====Adjacent sibling selector====</h2>
+        <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br>
+            Nulla molestias excepturi fugiat sunt error illo consequuntur corrupti libero voluptates quasi, 
+            voluptatum incidunt eveniet veritatis suscipit aliquid nihil voluptas quibusdam sapiente! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Libero voluptatum cupiditate ipsam consequatur beatae quasi debitis iste molestiae ipsum culpa,
+            earum saepe necessitatibus eveniet voluptas maiores est dolorem vel! Aliquid?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br>
+             Nulla molestias excepturi fugiat sunt error illo consequuntur corrupti libero voluptates quasi, 
+             voluptatum incidunt eveniet veritatis suscipit aliquid nihil voluptas quibusdam sapiente! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+             Libero voluptatum cupiditate ipsam consequatur beatae quasi debitis iste molestiae ipsum culpa,
+             earum saepe necessitatibus eveniet voluptas maiores est dolorem vel! Aliquid?</p>
+
+
+
+    <h2>=====Genaral sibling selector====</h2>
+        <h3>Heading</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br>
+                 Nulla molestias excepturi fugiat sunt error illo consequuntur corrupti libero voluptates quasi, 
+                 voluptatum incidunt eveniet veritatis suscipit aliquid nihil voluptas quibusdam sapiente! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                 Libero voluptatum cupiditate ipsam consequatur beatae quasi debitis iste molestiae ipsum culpa,
+                 earum saepe necessitatibus eveniet voluptas maiores est dolorem vel! Aliquid?</p>
+     
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br>
+                Nulla molestias excepturi fugiat sunt error illo consequuntur corrupti libero voluptates quasi, 
+                voluptatum incidunt eveniet veritatis suscipit aliquid nihil voluptas quibusdam sapiente! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Libero voluptatum cupiditate ipsam consequatur beatae quasi debitis iste molestiae ipsum culpa,
+                earum saepe necessitatibus eveniet voluptas maiores est dolorem vel! Aliquid?</p>
+
+
+            </body>
+</html>

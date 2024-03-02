@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-Pseudo</title>
+    <style>
+        button{
+            background-color: black;
+            color: white;
+        }
+        /* Pseudo Classes */
+        button:hover{
+            background-color: red;
+            cursor: pointer;
+        }
+        button:active{
+            color: blue;
+            background-color: aqua;
+        }
+        li:first-child{
+            color: blueviolet;
+        }
+        li:nth-child(3){
+            color: red;
+        }
+        li:last-child{
+            color: rgb(54, 9, 219);
+        }
+        /* Pseudo Element */
+        p::before{
+            content: "Read this....";
+            color: blue;
+        }
+        p::after{
+            content: "The End...";
+            color: blue;
+        }
+        p::first-letter{
+            font-size: 30px;
+            color: blue;
+        }
+        p::first-line{
+            font-weight: bold;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Lesson Pseudo</h1>
+
+    <h2>Pseudo Classes</h2>
+
+    <button>Click Here..</button>
+
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br>
+        Nulla molestias excepturi fugiat sunt error illo consequuntur corrupti libero voluptates quasi, 
+        voluptatum incidunt eveniet veritatis suscipit aliquid nihil voluptas quibusdam sapiente! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Libero voluptatum cupiditate ipsam consequatur beatae quasi debitis iste molestiae ipsum culpa,
+         earum saepe necessitatibus eveniet voluptas maiores est dolorem vel! Aliquid?</p>
+
+
+</body>
+</html>

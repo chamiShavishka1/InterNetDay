@@ -1,0 +1,33 @@
+p{
+    color: blue;
+}
+.content{
+    color: purple;
+}
+#content_id{
+    color: rgb(240, 7, 151);
+}
+h4{
+    color: red;
+}
+.card-tittle{
+    color: rgb(20, 182, 74);
+}
+#recipi-card-tittle{
+    color: brown;
+}
+div h4{
+    color: blueviolet;
+}
+div .card-tittle{
+    color: yellow; 
+}
+div #recipi-card-tittle{
+    color: rgb(9, 81, 83);
+}
+.card .card-tittle{
+    color: aqua;
+}
+#recipi-card-id #recipi-card-tittle{
+    color: chartreuse;
+}

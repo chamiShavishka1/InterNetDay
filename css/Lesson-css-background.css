@@ -1,0 +1,19 @@
+/* background colour */
+/* body{
+    background: linear-gradient(to right ,rgb(65, 34, 241),white);
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+
+body{
+    background-image: url(/assets/computer-767781_1280.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+
+}
+h2{
+    font-family: "Kode Mono", monospace;
+}
