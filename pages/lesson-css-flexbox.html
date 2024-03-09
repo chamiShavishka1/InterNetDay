@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-CSS-Flex-Box</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 30px;
+
+            /* position: static;
+            top: 100px;
+            left: 100px; */
+        }
+        .box1{
+            background-color: aqua;
+        }
+        .box2{
+            background-color: rgb(60, 29, 236);
+        }
+        .box3{
+            background-color: rgb(30, 209, 14);
+        }
+        .box4{
+            background-color: rgb(252, 71, 110);
+        }
+        .conteiner{
+            display:flex;
+            flex-direction:column;
+            /* justify-content:center;  */
+            align-content: center;
+            border: 10px solid black;
+            /* width: 500px; */
+            height: 500px;
+            flex-wrap: wrap;
+            /* row-gap: 12px;
+            column-gap: 12px; */
+            gap: 12px;
+        }
+    </style>
+</head>
+<body>
+   <div class="conteiner">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box1">5</div>
+    <div class="box box2">6</div>
+    <div class="box box3">7</div>
+    <div class="box box4">8</div>
+    <div class="box box1">9</div>
+    <div class="box box2">10</div>
+    <div class="box box3">11</div>
+    <div class="box box4">12</div>
+    <div class="box box2">13</div>
+    <div class="box box3">14</div>
+    <div class="box box4">15</div>
+    <div class="box box4">16</div>
+
+   </div>
+</body>
+</html>
