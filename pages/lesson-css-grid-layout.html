@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-Grid-LayOut</title>
+    <style>
+        .contienar{
+            display: grid;
+            /* grid-template-columns: 20% 20% 20% 20% 20%; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns: repeat(1,1fr 2fr 1fr);
+
+            column-gap:10px;
+
+        row-gap: 10px;
+
+        }
+        .contienar > div{
+            border: 2px solid black;
+        }
+        .contienar > div:nth-child(odd){
+            background-color: grey;
+        }
+        .contienar >div>div{
+            display: grid;
+            border: 2px solid black;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 10px;
+        }
+           
+    </style>
+</head>
+<body>
+   <div class="contienar">
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsum aperiam aspernatur dolorem! Nemo ipsa, 
+        illo deserunt culpa dolore voluptate pariatur molestiae neque et nulla cum sunt rem est! Mollitia.</div>
+
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsum aperiam aspernatur dolorem! Nemo ipsa, 
+        illo deserunt culpa dolore voluptate pariatur molestiae neque et nulla cum sunt rem est! Mollitia.</div>
+
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsum aperiam aspernatur dolorem! Nemo ipsa, 
+        illo deserunt culpa dolore voluptate pariatur molestiae neque et nulla cum sunt rem est! Mollitia.</div>
+        
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsum aperiam aspernatur dolorem! Nemo ipsa, 
+        illo deserunt culpa dolore voluptate pariatur molestiae neque et nulla cum sunt rem est! Mollitia.</div>
+
+    <div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsum aperiam aspernatur dolorem! Nemo ipsa, 
+            illo deserunt culpa dolore voluptate pariatur molestiae neque et nulla cum sunt rem est! Mollitia.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsum aperiam aspernatur dolorem! Nemo ipsa, 
+            illo deserunt culpa dolore voluptate pariatur molestiae neque et nulla cum sunt rem est! Mollitia.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsum aperiam aspernatur dolorem! Nemo ipsa, 
+            illo deserunt culpa dolore voluptate pariatur molestiae neque et nulla cum sunt rem est! Mollitia.</div>
+    </div>
+
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsum aperiam aspernatur dolorem! Nemo ipsa, 
+        illo deserunt culpa dolore voluptate pariatur molestiae neque et nulla cum sunt rem est! Mollitia.</div>
+
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsum aperiam aspernatur dolorem! Nemo ipsa, 
+        illo deserunt culpa dolore voluptate pariatur molestiae neque et nulla cum sunt rem est! Mollitia.</div>
+
+     <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsum aperiam aspernatur dolorem! Nemo ipsa, 
+        illo deserunt culpa dolore voluptate pariatur molestiae neque et nulla cum sunt rem est! Mollitia.</div>
+
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsum aperiam aspernatur dolorem! Nemo ipsa, 
+        illo deserunt culpa dolore voluptate pariatur molestiae neque et nulla cum sunt rem est! Mollitia.</div>
+   </div>
+</body>
+</html>
