@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-CSS-Animation</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-top: 50px; 
+            margin-left: 50px;
+            position:relative;
+            animation-name: square;
+            animation-duration: 15s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes square {
+
+            /* from{background-color: red; }
+            to{background-color: greenyellow;} */
+
+            0%{
+                background-color: red;
+            }
+            50%{
+                background-color: blue;
+            }
+            100%{
+                background-color: gold;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"> 
+
+    </div>
+</body>
+</html>
