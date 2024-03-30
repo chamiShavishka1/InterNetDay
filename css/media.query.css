@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+}
+
+/* h1{
+    color: red;
+}
+
+p{
+    color: aqua;
+}
+
+@media screen and (max-width: 500px) {
+    h1{
+        color: greenyellow;
+    }
+    p{
+        color: blue;
+    }
+    
+} */
+
+.card{
+    border-radius: 40px;
+    height: 400px;
+    width : 300px;
+    padding: 10px;
+    /* width: 400px; */
+    /* border-radius: 30px; */
+    
+    background-color: rgb(81, 202, 66);
+}
+/* .cardhead{
+     display: flex;
+} */
+
+
+.cardmid{
+    border-radius: 30px;
+    height: 230px;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* height: 180px;
+    width: 380px; */
+    margin: 7px;
+    background-color: white;
+    /* text-align: center;
+    font-size: 16px; */
+}
+.container{
+    display: grid;
+     /* justify-content: center; */
+    gap: 10px;
+    /* flex-wrap: wrap;  */
+    grid-template-columns: repeat(6,1fr);   
+}
+
+@media screen and (min-width:1200px)  and (max-width:1399px){
+    .container{
+    grid-template-columns: repeat(5,1fr);
+    }  
+} 
+
+@media screen and (min-width:992px)  and (max-width:768px){
+    .container{
+    grid-template-columns: repeat(4,1fr);
+    }  
+} 
+
+@media screen and (min-width:767px) and (max-width:576px) {
+    .container{
+    grid-template-columns: repeat(3,1fr);
+    }  
+} 
+
+@media screen and (min-width:575px) and (max-width:220px) {
+    .container{
+    grid-template-columns: repeat(2,1fr);
+    }  
+} 
+
+@media screen and (max-width:219px) {
+    .container{
+    grid-template-columns: repeat(1,1fr);
+    }  
+} 
